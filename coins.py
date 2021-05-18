@@ -15,4 +15,4 @@ left_over = total - quarters * 25 - dimes * 10 - nickels * 5
 
 pennies = left_over // 1
 
-print(f'The coins are {quarters} quarters, {dimes} dimes, {nickels} nickels, and {pennies} pennies')
+print(f'The coins are {quarters} quarters, {dimes} dimes, {nickels} nickels and {pennies} pennies')
