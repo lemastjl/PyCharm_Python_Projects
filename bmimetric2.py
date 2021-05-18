@@ -13,4 +13,4 @@ elif bmi >= 30:
 else:
     status = "Invalid input!"
 
-print(f'BMI is: {bmi}, Status is {status}')
+print(f'BMI is: {round(bmi, 2)}, Status is {status}')
