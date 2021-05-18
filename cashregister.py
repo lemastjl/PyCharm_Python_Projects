@@ -2,9 +2,9 @@ first_item = float(input("Enter price of the first item: "))
 second_item = float(input("Enter price of the second item: "))
 card_input = input("Does customer have a club card? (Y/N): ")
 card_bool = None
-if card_input == "Y" or "y":
+if card_input == "Y" or card_input == "y":
     card_bool = True
-elif card_input == "N" or "n":
+elif card_input == "N" or card_input == "n":
     card_bool = False
 else:
     print("Card input error!")
@@ -25,6 +25,7 @@ if card_bool:
     print(f'Total price = {round(total_price, 2):.2f}')
 else:
     print(f'Price after discounts = {round((first_item + second_item), 2):.2f}')
-    total_price = ((first_item + second_item) * tax_rate) + (first_item + second_item)
-    print(f'Total price = {round(total_price, 2):.2f}')
+    total_price = first_item + second_item
+    total_tax = total_price * tax_rate + total_price
+    print(f'Total price = {round(total_tax, 2):.2f}')
 
