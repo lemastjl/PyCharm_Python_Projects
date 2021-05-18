@@ -19,3 +19,4 @@ turtle.left(180 - beta)
 turtle.hideturtle()
 turtle.done
 
+
